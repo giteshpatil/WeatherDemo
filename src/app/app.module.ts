@@ -13,6 +13,7 @@ import { SettingsPage } from'../pages/settings/settings';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { WeatherProvider } from '../providers/weather/weather';
+import { Weather1Provider } from '../providers/weather1/weather1';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { WeatherProvider } from '../providers/weather/weather';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    WeatherProvider
+    WeatherProvider,
+    Weather1Provider
   ]
 })
 export class AppModule {}
